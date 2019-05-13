@@ -5,6 +5,9 @@ import sys
 
 import pytest
 
+from douzi_0419.commons import constant
+
 sys.path.append('./')
-pytest.main(['--html=douzi_0419/results/reports/report.html', '--junitxml=douzi_0419/results/reports/report.xml', '-m', 'register', '--reruns', '2',
-    '--alluredir=douzi_0419/results/allure'])
+
+pytest.main(['--html=resultss/reports/report.html', '--junitxml=resultss/reports/report.xml', '-m', 'register', '--reruns', '2',
+    '--alluredir=resultss/allure'])
