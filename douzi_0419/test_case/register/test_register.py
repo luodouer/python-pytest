@@ -17,7 +17,6 @@ cases = ep.get_cases('register')
 @pytest.mark.usefixtures('reg_func')
 class TestRegister:
 
-    @pytest.mark.register
     @pytest.mark.parametrize('case', cases)
     def test_register(self, case, reg_class, reg_func):
         self.session = reg_class['session']
